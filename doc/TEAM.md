@@ -8,7 +8,7 @@ Trưởng nhóm/người nộp: Lê Tuấn Đạt — 2A202602623
 
 Ngày lab/deadline áp dụng: 2026-10-12, deadline 23:59 — Asia/Ho_Chi_Minh (UTC+07:00)
 
-Commit dùng để chấm: cập nhật SHA của commit cuối sau khi push (lệnh `git rev-parse HEAD`).
+Commit dùng để chấm: 2c300968c2c9746763dfad6b7301bc4cc89b1374 (commit chứa toàn bộ bài làm; commit sau đó chỉ ghi SHA này vào TEAM).
 
 Mỗi nhóm nộp một repo. Điền đủ thành viên và một mục INDIVIDUAL cho từng người.
 Thêm/xóa rows để khớp nhóm thật; mẫu ba rows không ép nhóm phải có ba người.
