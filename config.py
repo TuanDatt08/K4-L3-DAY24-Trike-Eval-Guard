@@ -9,6 +9,16 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 HF_TOKEN = os.getenv("HF_TOKEN", "")  # Optional: for HuggingFace models
 
+# --- Day 18 module adapter (m4 evaluator LLM, m5 enrichment) — OpenAI only in this lab ---
+LLM_API_KEY = OPENAI_API_KEY
+LLM_BASE_URL = None
+LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
+
+
+def llm_client():
+    from openai import OpenAI
+    return OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL, max_retries=8)
+
 # --- Qdrant (same as Day 18) ---
 QDRANT_HOST = "localhost"
 QDRANT_PORT = 6333
